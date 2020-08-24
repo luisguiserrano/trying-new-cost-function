@@ -32,6 +32,11 @@ resources:
   parameters:
     url: "git@github.com:zapatacomputing/qe-openfermion.git"
     branch: "dev"
+- name: trying-new-cost-function
+  type: git
+  parameters:
+    url: "git@github.com:luisguiserrano/trying-new-cost-function.git"
+    branch: "dev"
 
 # Specify the prefix to use when generating names of workflow executions.
 metadata:
@@ -95,4 +100,3 @@ spec:
               from: "{{steps.get-initial-parameters.outputs.artifacts.params}}"
           - target-distribution:
               from: "{{steps.get-bars-and-stripes-distribution.outputs.artifacts.distribution}}"
-© 2020 GitHub, Inc.
