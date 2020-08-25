@@ -2,13 +2,10 @@ import setuptools
 import os
 
 setuptools.setup(
-    name="z-quantum-qcbm",
+    name="luis-trying-cost-function",
     version="0.2.0",
-    author="Zapata Computing, Inc.",
-    author_email="info@zapatacomputing.com",
-    description="QCBM package for Orquestra.",
-    url="https://github.com/zapatacomputing/z-quantum-qcbm ",
-    packages=setuptools.find_namespace_packages(include=['zquantum.*']),
+    url="https://github.com/luisguiserrano/trying-new-cost-function",
+    packages=setuptools.find_namespace_packages(include=['zquantum.*', 'kl.*']),
     package_dir={'' : 'python'},
     classifiers=(
         "Programming Language :: Python :: 3",
