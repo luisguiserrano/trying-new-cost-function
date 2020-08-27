@@ -5,7 +5,7 @@ setuptools.setup(
     name="trying-new-cost-function",
     version="0.2.0",
     url="https://github.com/luisguiserrano/trying-new-cost-function",
-    #packages=setuptools.find_namespace_packages(include=['zquantum.*', 'kl.*']),
+    packages=setuptools.find_namespace_packages(include=['zquantum.*']),
     packages = setuptools.find_packages(where = "python")
     package_dir={'' : 'python'},
     classifiers=(
