@@ -6,7 +6,7 @@ resources:
   type: git
   parameters:
     url: "git@github.com:zapatacomputing/z-quantum-core.git"
-    branch: "testing-cost-functions"
+    branch: "master"
 - name: z-quantum-qcbm
   type: git
   parameters:
@@ -85,7 +85,7 @@ spec:
           - n-qubits: "{{workflow.parameters.n-qubits}}"
           - n-layers: "{{workflow.parameters.n-layers}}"
           - topology: "{{workflow.parameters.topology}}"
-          - distance-measure-specs: "{'module_name': 'kl', 'function_name': 'compute_kl_divergence'}"
+          - distance-measure-specs: "{'module_name': 'kl_divergence', 'function_name': 'compute_kl_divergence'}"
           # - distance-measure-specs: "{'module_name': 'zquantum.core.bitstring_distribution', 'function_name': 'compute_clipped_negative_log_likelihood'}"
           # - distance-measure-specs: "{'module_name': 'zquantum.core.bitstring_distribution', 'function_name': 'compute_mmd'}"
           - distance-measure-parameters: "{'epsilon': 1e-6}"
